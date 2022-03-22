@@ -1,0 +1,375 @@
+@font-face {
+    font-family: Conthrax;
+    src: url('fonts/conthrax-sb.ttf');
+}
+
+body {
+    background: url("images/mainBg.jpg") center no-repeat;
+    background-size: cover;
+
+}
+
+#main
+{
+    font-family: Conthrax, serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    color: #FFFFFF;
+    /*margin-bottom: 70px;*/
+}
+
+.footerContainer
+{
+    position: relative;
+    padding-top: 70px;
+    padding-left: 70px;
+    font-family: 'Lato', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #C9C9F0;
+    z-index: -1;
+}
+
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.registrationBlock {
+    margin: 50px auto;
+    max-width: 60%;
+    min-width: 450px;
+    background: #191932;
+    box-shadow: 0 62.6803px 62.9459px rgba(0, 0, 0, 0.250365), 0 35.1381px 35.287px rgba(0, 0, 0, 0.21);
+    border-radius: 16px;
+    padding-bottom: 30px;
+}
+
+.registrationForm .formLabel
+{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.44px;
+    color: #C9C9F0;
+}
+
+.registrationForm input
+{
+    font-size: 14px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #6A6A9F;
+    margin-bottom: 20px;
+}
+
+.logoImage {
+    width: 64px;
+    height: auto;
+    margin-left: 70px;
+    margin-top: 62px;
+}
+
+.logoTitle {
+    font-family: Conthrax, serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 73px;
+    margin-left: 18px;
+}
+
+.navLink {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.content {
+    font-family: Conthrax, serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: rgba(253, 253, 253, 1);
+}
+
+.homeContent {
+    margin-top: 200px;
+    text-align: left;
+}
+
+.homeText {
+    width: 90%;
+}
+
+.authButtons {
+    font-family: Conthrax, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    width: 450px;
+}
+
+.button {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: none;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.registrationButton {
+    background: rgba(2, 58, 255, 1);
+    border: rgba(2, 58, 255, 1);
+}
+
+.registrationButton:hover {
+    background: rgba(46, 76, 168, .8);
+    transition: all .2s ease;
+}
+
+.loginButton:hover {
+    background: rgba(255, 255, 255, .2);
+    transition: all .2s ease;
+}
+
+.btnItem {
+    width: 100%;
+}
+
+.copyright {
+    font-family: 'Lato', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: #C9C9F0;
+}
+
+.regTitle
+{
+    text-align: center;
+    padding-top: 30px;
+}
+
+::placeholder
+{
+    color: #FFFFFF;
+}
+
+#verifyAccount
+{
+    margin: 0 auto;
+    border: 3px solid #023AFF;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#verifyAccount:hover
+{
+    transition: all .2s ease;
+    background: rgba(255, 255, 255, .1);
+}
+
+.names
+{
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.namesItem
+{
+    width: 100%;
+}
+
+.namesItem input
+{
+    min-width: 80%;
+    max-width: 150px;
+}
+
+.password
+{
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.passwordItem
+{
+    width: 100%;
+}
+
+.passwordItem input
+{
+    min-width: 80%;
+    max-width: 150px;
+}
+
+.registrationForm input:focus
+{
+    transition: all .1s linear;
+    font-size: 12px;
+}
+
+.checkBoxItem
+{
+    display: none;
+    margin-right: 10px;
+}
+
+.checkBox .formLabel
+{
+    color: #FFFFFF;
+    cursor: default;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 10px 0;
+    vertical-align: middle;
+}
+
+.checkBox .formLabel:before
+{
+    content: " ";
+    color: #FFFFFF;
+    display: inline-block;
+    font: 20px/30px Arial;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    border-image: initial;
+    vertical-align: middle;
+}
+
+.checkBoxItem:checked + .formLabel:before
+{
+    content: '✔';
+}
+
+.checkBoxItem:disabled + .checkBox .formLabel:before {
+    background: #eee;
+    color: #aaa;
+}
+
+.captcha
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#registerButton, #loginButton
+{
+    font-size: 20px;
+    border: 3px solid #023AFF;
+    background: #023AFF;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#registerButton:hover, #loginButton:hover
+{
+    transition: all .1s linear;
+    background: #31459b;
+}
+
+.errorDetails
+{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.44px;
+    color: red;
+    margin-left: 5px;
+}
+
+.forgotPassword
+{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.verifyCode
+{
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 8px;
+    background: rgba(0, 0, 200, .2);
+    margin-bottom: 20px;
+}
+
+.verifyCodeButton
+{
+    width: 80%;
+    margin: 10px auto;
+}
+
+#verifyCode
+{
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 95%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#verifyCode:focus
+{
+    font-size: 20px;
+}
+
+.verifyCodeButton:hover
+{
+    transition: all .1s linear;
+    background-color: rgba(0, 255, 0, .5);
+}
+
+.instruction
+{
+    font-size: 14px;
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+}

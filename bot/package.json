@@ -1,0 +1,8 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
