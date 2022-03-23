@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'knox',
     'settings',
+    'articles',
 ]
 
 MIDDLEWARE = [

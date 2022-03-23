@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 
 import Logout from "./Logout";
+import NewsFeed from "./NewsFeed/NewsFeed";
+
+import SideBar from "./SideBar";
+
+import {Switch, Route, Redirect} from "react-router-dom";
 
 class Dashboard extends Component {
     // eslint-disable-next-line no-useless-constructor
@@ -8,13 +13,11 @@ class Dashboard extends Component {
         super(props);
     }
 
-    componentDidMount() {
-    }
-
     render() {
         return (
-            <div>
-                <Logout/>
+            <div className="d-flex">
+                <SideBar/>
+                {/*<Logout/>*/}
             </div>
         );
     }

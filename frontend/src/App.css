@@ -4,13 +4,15 @@
 }
 
 body {
-    background: url("images/mainBg.jpg") center no-repeat;
-    background-size: cover;
-
+    background: url("images/mainBg.jpg") center no-repeat fixed;
 }
 
-#main
-{
+.dashBoard {
+    background: url("images/dashboardBG.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+#main {
     font-family: Conthrax, serif;
     font-size: 28px;
     font-style: normal;
@@ -20,8 +22,7 @@ body {
     /*margin-bottom: 70px;*/
 }
 
-.footerContainer
-{
+.footerContainer {
     position: relative;
     padding-top: 70px;
     padding-left: 70px;
@@ -52,8 +53,7 @@ body {
     padding-bottom: 30px;
 }
 
-.registrationForm .formLabel
-{
+.registrationForm .formLabel {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -65,8 +65,7 @@ body {
     color: #C9C9F0;
 }
 
-.registrationForm input
-{
+.registrationForm input {
     font-size: 14px;
     color: #FFFFFF;
     background: none;
@@ -177,81 +176,68 @@ body {
     color: #C9C9F0;
 }
 
-.regTitle
-{
+.regTitle {
     text-align: center;
     padding-top: 30px;
 }
 
-::placeholder
-{
+::placeholder {
     color: #FFFFFF;
 }
 
-#verifyAccount
-{
+#verifyAccount {
     margin: 0 auto;
     border: 3px solid #023AFF;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-#verifyAccount:hover
-{
+#verifyAccount:hover {
     transition: all .2s ease;
     background: rgba(255, 255, 255, .1);
 }
 
-.names
-{
+.names {
     margin: 0 auto;
     justify-content: space-between;
     width: 100%;
 }
 
-.namesItem
-{
+.namesItem {
     width: 100%;
 }
 
-.namesItem input
-{
+.namesItem input {
     min-width: 80%;
     max-width: 150px;
 }
 
-.password
-{
+.password {
     margin: 0 auto;
     justify-content: space-between;
     width: 100%;
 }
 
-.passwordItem
-{
+.passwordItem {
     width: 100%;
 }
 
-.passwordItem input
-{
+.passwordItem input {
     min-width: 80%;
     max-width: 150px;
 }
 
-.registrationForm input:focus
-{
+.registrationForm input:focus {
     transition: all .1s linear;
     font-size: 12px;
 }
 
-.checkBoxItem
-{
+.checkBoxItem {
     display: none;
     margin-right: 10px;
 }
 
-.checkBox .formLabel
-{
+.checkBox .formLabel {
     color: #FFFFFF;
     cursor: default;
     font-weight: normal;
@@ -260,8 +246,7 @@ body {
     vertical-align: middle;
 }
 
-.checkBox .formLabel:before
-{
+.checkBox .formLabel:before {
     content: " ";
     color: #FFFFFF;
     display: inline-block;
@@ -279,8 +264,7 @@ body {
     vertical-align: middle;
 }
 
-.checkBoxItem:checked + .formLabel:before
-{
+.checkBoxItem:checked + .formLabel:before {
     content: '✔';
 }
 
@@ -289,14 +273,12 @@ body {
     color: #aaa;
 }
 
-.captcha
-{
+.captcha {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-#registerButton, #loginButton
-{
+#registerButton, #loginButton {
     font-size: 20px;
     border: 3px solid #023AFF;
     background: #023AFF;
@@ -304,14 +286,12 @@ body {
     border-radius: 8px;
 }
 
-#registerButton:hover, #loginButton:hover
-{
+#registerButton:hover, #loginButton:hover {
     transition: all .1s linear;
     background: #31459b;
 }
 
-.errorDetails
-{
+.errorDetails {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -324,14 +304,12 @@ body {
     margin-left: 5px;
 }
 
-.forgotPassword
-{
+.forgotPassword {
     text-decoration: none;
     font-size: 14px;
 }
 
-.verifyCode
-{
+.verifyCode {
     justify-content: space-between;
     flex-direction: column;
     border-radius: 8px;
@@ -339,14 +317,12 @@ body {
     margin-bottom: 20px;
 }
 
-.verifyCodeButton
-{
+.verifyCodeButton {
     width: 80%;
     margin: 10px auto;
 }
 
-#verifyCode
-{
+#verifyCode {
     border: 1px solid;
     border-radius: 8px;
     font-size: 15px;
@@ -355,21 +331,163 @@ body {
     text-align: center;
 }
 
-#verifyCode:focus
-{
+#verifyCode:focus {
     font-size: 20px;
 }
 
-.verifyCodeButton:hover
-{
+.verifyCodeButton:hover {
     transition: all .1s linear;
     background-color: rgba(0, 255, 0, .5);
 }
 
-.instruction
-{
+.instruction {
     font-size: 14px;
     text-align: center;
     margin: 10px auto;
     width: 80%;
+}
+
+.sideBar {
+    align-items: center;
+    flex-direction: column;
+    background: #191932;
+    width: 100px;
+    padding-top: 10px;
+    height: 100vh;
+}
+
+.navigate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.sideBar .logoImage {
+    margin: 0;
+}
+
+.newsForm {
+    margin: 40px auto;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 70%;
+    background: #191932;
+    box-shadow: 0 62.6803px 62.9459px rgba(0, 0, 0, 0.250365), 0 35.1381px 35.287px rgba(0, 0, 0, 0.21);
+    border-radius: 16px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsForm input,
+.newsForm textarea {
+    font-size: 14px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #6A6A9F;
+    margin-bottom: 20px;
+}
+
+.newsForm textarea {
+    height: 100%;
+}
+
+.newsForm input:focus,
+.newsForm textarea:focus {
+    transition: all .1s linear;
+    font-size: 12px;
+}
+
+.newsForm .formLabel {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.44px;
+    color: #C9C9F0;
+}
+
+.ArticleTitleImage {
+    margin: 40px auto;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 25%;
+    min-width: 200px;
+    height: 300px;
+    background: #191932;
+    box-shadow: 0 62.6803px 62.9459px rgba(0, 0, 0, 0.250365), 0 35.1381px 35.287px rgba(0, 0, 0, 0.21);
+    border-radius: 16px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ArticleTitleImage input {
+    font-size: 14px;
+    color: #FFFFFF;
+    background: none;
+    /*border: 1px #FFFFFF dashed;*/
+    /*border-radius: 10px;*/
+}
+
+.ArticleTitleImage .formLabel {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.44px;
+    color: #C9C9F0;
+}
+
+.newsEditorContent {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.newsEditorContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.publishButton {
+    width: 200px;
+    font-size: 14px;
+    text-align: center;
+    background: #023AFF;
+    border: none;
+}
+
+.newsTitle {
+    margin-top: 20px;
+}
+
+.inputArticleImage {
+    outline: 0;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.imageLabel {
+    /*width: 120px;*/
+    border: 2px dashed grey;
+    border-radius: 5px;
+    display: block;
+    padding: 1.2em;
+    transition: border 300ms ease;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
 }
