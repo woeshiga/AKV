@@ -9,3 +9,5 @@ export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
 export const GET_SETTINGS = 'GET_SETTINGS';
 export const GET_VERIFY_CODE = 'GET_VERIFY_CODE';
 export const GET_RESET_TOKEN = 'GET_RESET_TOKEN';
+export const GET_NEWS_LIST = 'GET_NEWS_LIST';
+export const GET_ARTICLE = 'GET_ARTICLE';

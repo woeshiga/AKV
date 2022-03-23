@@ -18,9 +18,9 @@ class ArticleViewSet(viewsets.ViewSet):
         return Response(serializer.data)
 
     def retrieve(self, request, pk=None):
-        queryset = User.objects.all()
-        user = get_object_or_404(queryset, pk=pk)
-        serializer = ArticlesSerializer(user)
+        queryset = Article.objects.all()
+        article = get_object_or_404(queryset, pk=pk)
+        serializer = ArticlesSerializer(article)
         return Response(serializer.data)
 
 
@@ -35,5 +35,5 @@ class CreateArticleViewSet(viewsets.ModelViewSet):
         serializer.is_valid(raise_exception=True)
         article = serializer.save()
         return Response({
-            "article": ArticlesSerializer(article, context=serializer.get_serializer_context()).data
+            "article": ArticlesSerializer(article, context=self.get_serializer_context()).data
         })
