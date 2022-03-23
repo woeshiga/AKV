@@ -4,4 +4,4 @@ from django.db import models
 class Article(models.Model):
     title = models.TextField()
     content = models.TextField()
-    image = models.ImageField()
+    image = models.ImageField(null=True, blank=True)
