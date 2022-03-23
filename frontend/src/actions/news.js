@@ -3,7 +3,7 @@ import {GET_NEWS_LIST, GET_ARTICLE} from "./types";
 
 
 export const getNewsList = () => async dispatch => {
-    const res = await api.get('articles/article');
+    const res = await api.get('api/articles/article');
     dispatch({type: GET_NEWS_LIST, payload: res});
 }
 

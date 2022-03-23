@@ -491,3 +491,42 @@ body {
     text-align: center;
     align-items: center;
 }
+
+.card
+{
+    margin-top: 10px;
+    font-size: 10px;
+    width: 95%;
+    height: 350px;
+    background-color: #191932;
+}
+
+.cardImage > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardImage
+{
+    width: 100%;
+    height: 200px;
+}
+
+.articleCardTitle
+{
+    font-size: 18px;
+}
+
+.articleCardDescription
+{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.newsFeedContent
+{
+    margin: 0 auto;
+    width: 80%;
+}
